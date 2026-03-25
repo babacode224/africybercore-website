@@ -13,6 +13,7 @@ import ScrollProgress from './components/ScrollProgress';
 import AnimatedSection from './components/AnimatedSection';
 import './App.css';
 import ScrollToTop from './components/ScrollToTop';
+import DevToolsPanel from './components/DevToolsPanel';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -59,6 +60,7 @@ function App() {
       </main>
       <Footer />
       <ScrollToTop />
+      <DevToolsPanel />
     </div>
   );
 }
