@@ -4,8 +4,8 @@
   "type": "module",
   "description": "AfriCyberCore - Static marketing website",
   "scripts": {
-    "dev": "npx serve . -l 3000",
-    "build": "echo 'Static site - no build needed'",
+    "dev": "serve . -l 3000",
+    "build": "mkdir -p dist && cp -r *.html assets dist/ && cp -r assets/* dist/assets/ 2>/dev/null || true",
     "preview": "npx serve . -l 3000",
     "start": "npx serve . -l 3000"
   },
